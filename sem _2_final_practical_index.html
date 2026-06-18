@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uber Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Uber</div>
+
+    <ul>
+        <li><a href="#">Ride</a></li>
+        <li><a href="#">Drive</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Go Anywhere with Uber</h1>
+        <p>Book your ride in seconds</p>
+
+        <div class="booking-box">
+            <input type="text" id="pickup" placeholder="Pickup Location">
+            <input type="text" id="drop" placeholder="Drop Location">
+
+            <select id="rideType">
+                <option value="10">Uber Go</option>
+                <option value="15">Uber Sedan</option>
+                <option value="20">Uber XL</option>
+            </select>
+
+            <input type="number" id="distance" placeholder="Distance (KM)">
+
+            <button onclick="calculateFare()">
+                Book Ride
+            </button>
+
+            <h2 id="fare"></h2>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+
+    <div class="card">
+        <h3>Uber Go</h3>
+        <p>Affordable rides for daily travel.</p>
+    </div>
+
+    <div class="card">
+        <h3>Uber Sedan</h3>
+        <p>Comfortable rides for family trips.</p>
+    </div>
+
+    <div class="card">
+        <h3>Uber XL</h3>
+        <p>Large vehicles for groups.</p>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
